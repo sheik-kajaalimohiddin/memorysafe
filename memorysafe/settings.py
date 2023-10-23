@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xapl8@i(^3u&o1ii5&#*zz^9qk_-dr!&m3g$h%#&$8o#o%08r=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -83,12 +83,12 @@ WSGI_APPLICATION = 'memorysafe.wsgi.application'
 #mysql connection - my college system
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'memorysafe',
-        'USER': 'memorysafeuser1',
-        'PASSWORD': 'Memorysafe1234',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'postgresDB',
+        'USER': 'postgres',
+        'PASSWORD': 'Postgres1234',
+        'HOST': 'finalprojectdb.c64umoefw3nt.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
