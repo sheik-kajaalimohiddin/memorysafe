@@ -21,13 +21,13 @@ DIR="memorysafe"
 if [ -d "$DIR" ];
 then
 	rm -rf memorysafe/
-	git clone git@github.com:sheik-kajaalimohiddin/memorysafe.git &> /dev/null
+	git clone https://github.com/sheik-kajaalimohiddin/memorysafe.git &> /dev/null
 	cd memorysafe/
 	python manage.py makemigrations &> /dev/null
 	python manage.py migrate &> /dev/null
 	python manage.py runserver 0.0.0.0:8000 &> /dev/null
 else
-	git clone git@github.com:sheik-kajaalimohiddin/memorysafe.git &> /dev/null
+	git clone https://github.com/sheik-kajaalimohiddin/memorysafe.git &> /dev/null
 	cd memorysafe/
 	python manage.py makemigrations &> /dev/null
 	python manage.py migrate &> /dev/null
